@@ -36,8 +36,10 @@ module.exports = function override(config) {
       );
 
   const envPlugin = new webpack.DefinePlugin({
-    'process.env': JSON.stringify(process.env.NODE_ENV),
-    ...envVariables,
+    'process.env': {
+      NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      ...envVariables,
+    },
   });
 
   config.plugins.push(envPlugin);
