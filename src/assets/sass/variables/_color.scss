@@ -1,0 +1,55 @@
+// Default Color
+$white: #FFFFFF !default;
+$black: #000000 !default;
+$green: #24962C;
+$red: #FD2824;
+
+// Base colors
+$primary-color: #2c7bd2 !default;
+$secondary-color: #000000 !default;
+$error-color: #ef5350 !default;
+$warning-color: #FFCA28 !default;
+$warning-alt-color: #FF9800 !default;
+$base-grey: #333333 !default;
+$light-grey: lighten($base-grey, 15%);
+$lighter-grey: lighten($light-grey, 15%);
+$lightest-grey: lighten($lighter-grey, 15%);
+$blank-color: $black;
+$dead-color: $red;
+$rest-color: $green;
+
+
+//Color Palette
+$colorMap: (
+  "primary": (
+    "base": $primary-color,
+    "dark": darken($primary-color, 10%),
+    "light": lighten($primary-color, 10%)
+  ),
+  "secondary": (
+    "base": $secondary-color,
+    "dark": darken($secondary-color, 10%),
+    "light": lighten($secondary-color, 10%)
+  ),
+  "error": (
+    "base": $error-color,
+    "dark": darken($error-color, 10%),
+    "light": lighten($error-color, 10%)
+  ),
+  "warning": (
+    "base": $warning-color,
+    "dark": darken($warning-color, 10%),
+    "light": lighten($warning-color, 10%)
+  ),
+  "warning-alt": (
+    "base": $warning-alt-color,
+    "dark": darken($warning-alt-color, 10%),
+    "light": lighten($warning-alt-color, 10%)
+  ),
+  "grey": (
+    "body" : $light-grey,
+    "title" : $base-grey,
+    "subtitle" : $lighter-grey,
+    "light" : $lightest-grey,
+  )
+);

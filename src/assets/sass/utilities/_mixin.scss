@@ -1,0 +1,11 @@
+@mixin transition(
+    $property: all, 
+    $duration: 0.2s,
+    $timing: $ease--in-cubic ,
+    $delay: "") {
+    transition: $property $duration $timing unquote($delay);
+}
+@mixin bg-opacity($color, $opacity) {
+    background-color: $color;
+    background-color: rgba($color, $opacity) !important;
+  }
