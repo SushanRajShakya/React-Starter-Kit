@@ -14,6 +14,10 @@ const App = () => {
   return (
     <div>
       <h1 style={headerStyle}>React Starter Kit</h1>
+
+      <p>
+        <strong>Environment</strong>: {process.env.ENV}
+      </p>
     </div>
   );
 };
